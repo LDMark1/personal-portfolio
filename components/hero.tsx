@@ -61,10 +61,7 @@ export default function Hero() {
                 </Link>
               </Button>
               <Button variant="outline" asChild className="animate-scale-in animate-delay-400">
-                <a
-                  href="https://drive.google.com/file/d/1Xs4G5ISIZvawIKcwstrMCRjSKnRlns8s/view?usp=sharing"
-                  download="Abdul_Rafae_CV.pdf"
-                >
+                <a href="/api/download-cv" download="Abdul_Rafae_CV.pdf">
                   Download CV <Download className="ml-2 h-4 w-4" />
                 </a>
               </Button>

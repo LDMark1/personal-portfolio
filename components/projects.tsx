@@ -1,7 +1,10 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { ExternalLink, Github } from "lucide-react"
+import { Github } from "lucide-react"
+import poetryImage from "@/assets/poetry.png"
+import flipAndFreshImage from "@/assets/flipandfresh.png"
+import telePsychiatryImage from "@/assets/tele-psychiatry-app.png"
 
 export default function Projects() {
   const projects = [
@@ -10,7 +13,7 @@ export default function Projects() {
       description:
         "Built a full-featured parcel tracking application using Next.js with dynamic routing, API-driven tracking updates, status visualisation components, and reusable UI modules for shipment history and notifications.",
       technologies: ["Next.js", "TypeScript", "TailwindCSS", "SSR", "ISR"],
-      image: "/placeholder.svg?height=200&width=400",
+      image: poetryImage.src,
       github: "https://github.com/LDMark1/",
     },
     {
@@ -18,7 +21,7 @@ export default function Projects() {
       description:
         "Developed a modern e-commerce frontend using Next.js with responsive product listing and detail pages, dynamic routing, clean component hierarchy, and a focus on performance and mobile responsiveness.",
       technologies: ["Next.js", "TypeScript", "TailwindCSS", "E-commerce"],
-      image: "/placeholder.svg?height=200&width=400",
+      image: flipAndFreshImage.src,
       github: "https://github.com/LDMark1/",
     },
     {
@@ -26,7 +29,7 @@ export default function Projects() {
       description:
         "Built a real-time 1-to-1 consultation interface enabling direct conversations between clients and psychiatrists, with role-based dashboards, secure appointment booking, and responsive layouts.",
       technologies: ["React.js", "TypeScript", "MUI", "Real-time Chat"],
-      image: "https://i.ibb.co/zThX41Hx/Logo-Mind-Connect.jpg?height=200&width=400",
+      image: telePsychiatryImage.src,
       github: "https://github.com/LDMark1/Tele-psychiatry-app",
     },
   ]
