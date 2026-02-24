@@ -14,7 +14,7 @@ export default function AboutMe() {
           <div className="reveal-left">
             <h3 className="text-2xl font-semibold text-slate-900 dark:text-white mb-6">Hello, I'm Abdul Rafae</h3>
             <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
-              I'm a Frontend Software Engineer specialising in React and Next.js, with a strong focus on building
+              I'm a Frontend Engineer specialising in React and Next.js, with a strong focus on building
               high-performance, user-facing web applications and modern e-commerce interfaces. My expertise spans
               TypeScript, component architecture, reusable UI systems, and API-driven frontend development.
             </p>

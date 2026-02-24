@@ -1,20 +1,23 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Github } from "lucide-react"
-import poetryImage from "@/assets/poetry.png"
+import { ExternalLink, Github } from "lucide-react"
+import parcelDeliveryImage from "@/assets/parcel-delivery-app.png"
 import flipAndFreshImage from "@/assets/flipandfresh.png"
 import telePsychiatryImage from "@/assets/tele-psychiatry-app.png"
+import pricingCalculatorImage from "@/assets/pricing-calculator.png"
+import phishingAwarenessImage from "@/assets/phishing-awareness.png"
+import ticTacToeImage from "@/assets/tictactoe.png"
 
 export default function Projects() {
   const projects = [
     {
-      title: "Parcel Logistics Management Platform",
+      title: "Parcel Tracking App",
       description:
         "Built a full-featured parcel tracking application using Next.js with dynamic routing, API-driven tracking updates, status visualisation components, and reusable UI modules for shipment history and notifications.",
       technologies: ["Next.js", "TypeScript", "TailwindCSS", "SSR", "ISR"],
-      image: poetryImage.src,
-      github: "https://github.com/LDMark1/",
+      image: parcelDeliveryImage.src,
+      github: "https://github.com/LDMark1/parcel-tracking-app",
     },
     {
       title: "Flip & Fresh",
@@ -22,7 +25,8 @@ export default function Projects() {
         "Developed a modern e-commerce frontend using Next.js with responsive product listing and detail pages, dynamic routing, clean component hierarchy, and a focus on performance and mobile responsiveness.",
       technologies: ["Next.js", "TypeScript", "TailwindCSS", "E-commerce"],
       image: flipAndFreshImage.src,
-      github: "https://github.com/LDMark1/",
+      github: "https://github.com/LDMark1/flip-and-fresh-portfolio",
+      site: "https://flip-and-fresh-portfolio.vercel.app/",
     },
     {
       title: "Tele-Psychiatry App",
@@ -31,6 +35,33 @@ export default function Projects() {
       technologies: ["React.js", "TypeScript", "MUI", "Real-time Chat"],
       image: telePsychiatryImage.src,
       github: "https://github.com/LDMark1/Tele-psychiatry-app",
+    },
+    {
+      title: "Freelancing Pricing Calculator",
+      description:
+        "Created a pricing calculator tailored for freelancers to estimate project costs based on scope, timeline, revisions, and service packages with a clean, responsive interface.",
+      technologies: ["React.js", "TypeScript", "TailwindCSS", "Form Logic"],
+      image: pricingCalculatorImage.src,
+      github: "https://github.com/LDMark1/freelancer-pricing-calculator",
+    },
+    {
+      title: "PhishGuard",
+      description:
+        "Developed a phishing awareness website focused on educating users about common email and website phishing patterns through interactive content and practical safety guidance.",
+      technologies: ["Next.js", "TypeScript", "TailwindCSS", "Cybersecurity Awareness"],
+      image: phishingAwarenessImage.src,
+      github: "https://github.com/LDMark1/phishing-awareness-website",
+      site: "https://phishing-awareness-website-six.vercel.app",
+    },
+    {
+      title: "Tic-Tac-Toe",
+      description:
+        "Built an interactive Tic-Tac-Toe game with clean state management, winner and draw detection, and responsive gameplay across devices.",
+      technologies: ["React.js", "TypeScript", "Game Logic", "Responsive UI"],
+      image: ticTacToeImage.src,
+      imageClassName: "object-contain scale-60",
+      github: "https://github.com/LDMark1/tic-tac-toe",
+      site: "https://tic-tac-toe-snowy-one-23.vercel.app/",
     },
   ]
 
@@ -57,7 +88,7 @@ export default function Projects() {
                 <img
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  className={`w-full h-full transition-transform duration-500 hover:scale-110 ${project.imageClassName || "object-cover"}`}
                 />
               </div>
               <CardContent className="p-6">
@@ -75,16 +106,34 @@ export default function Projects() {
                   ))}
                 </div>
               </CardContent>
-              <CardFooter className="p-6 pt-0 flex justify-between">
-                <Button variant="outline" size="sm" asChild>
-                  <a href={project.github} target="_blank" rel="noopener noreferrer">
-                    <Github className="mr-2 h-4 w-4" />
-                    Code
-                  </a>
-                </Button>
+              <CardFooter className="p-6 pt-0">
+                <div className="flex gap-2">
+                  <Button variant="outline" size="sm" asChild>
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      <Github className="mr-2 h-4 w-4" />
+                      View GitHub
+                    </a>
+                  </Button>
+                  {project.site && (
+                    <Button size="sm" asChild>
+                      <a href={project.site} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="mr-2 h-4 w-4" />
+                        View Site
+                      </a>
+                    </Button>
+                  )}
+                </div>
               </CardFooter>
             </Card>
           ))}
+        </div>
+
+        <div className="mt-10 flex justify-center">
+          <Button asChild>
+            <a href="https://github.com/LDMark1" target="_blank" rel="noopener noreferrer">
+              View More Projects
+            </a>
+          </Button>
         </div>
       </div>
     </section>

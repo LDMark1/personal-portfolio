@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react"
 import Link from "next/link"
+import picofmeImage from "@/assets/picofme.png"
 
 export default function Hero() {
   const [typedText, setTypedText] = useState("")
@@ -39,7 +40,7 @@ export default function Hero() {
               Abdul Rafae
             </h1>
             <h2 className="text-xl md:text-2xl font-medium text-slate-700 dark:text-slate-300 mb-6">
-              Frontend Software Engineer
+              Frontend Engineer
             </h2>
             <div className="h-8 mb-8">
               <p className="text-lg md:text-xl text-blue-600 dark:text-blue-400 font-medium">
@@ -49,7 +50,7 @@ export default function Hero() {
             </div>
 
             <p className="text-slate-600 dark:text-slate-400 max-w-2xl mb-8 leading-relaxed">
-              Frontend Software Engineer specialising in React and Next.js, with experience building high-performance,
+              Frontend Engineer specialising in React and Next.js, with experience building high-performance,
               user-facing web applications and modern e-commerce interfaces. Focused on delivering responsive, accessible,
               and conversion-driven digital experiences.
             </p>
@@ -94,7 +95,7 @@ export default function Hero() {
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-xl animate-float">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 opacity-80"></div>
               <div className="absolute inset-0 flex items-center justify-center text-white text-lg font-medium">
-                <img src="https://i.ibb.co/fz2fdYYL/picofme.png" alt="Abdul Rafae" className="w-full h-full object-cover" />
+                <img src={picofmeImage.src} alt="Abdul Rafae" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
