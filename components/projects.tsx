@@ -1,0 +1,119 @@
+import { Card, CardContent, CardFooter } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
+import { ExternalLink, Github } from "lucide-react"
+
+export default function Projects() {
+  const projects = [
+    {
+      title: "Child Vaccination Data Warehouse",
+      description:
+        "Developed a comprehensive data warehouse for maintaining and reporting child vaccination data for Pakistan. This was my final year project.",
+      technologies: ["Python", "SQL", "ETL", "Data Visualization", "Reporting"],
+      image: "https://i.ibb.co/JWJ13G95/vaccine-image.jpg?height=200&width=400",
+      github: "https://github.com/LDMark1/",
+      //demo: "#",
+    },
+    {
+      title: "Tele-psychiatry App",
+      description:
+        "Built a Tele-psychiatry app using React and Firebase, enabling real-time one-to-one chat between patients and psychiatrists, improving accessibility to mental health services.",
+      technologies: ["React", "Firebase", "Real-time Chat", "Authentication"],
+      image: "https://i.ibb.co/zThX41Hx/Logo-Mind-Connect.jpg?height=200&width=400",
+      github: "https://github.com/LDMark1/Tele-psychiatry-app",
+      //demo: "#",
+    },
+    {
+      title: "Flight Management System",
+      description:
+        "Designed a comprehensive Flight Management System using HTML, CSS, Django and MS SQL Server for booking and managing flight operations.",
+      technologies: ["HTML", "CSS", "Django", "MS SQL Server"],
+      image: "https://i.ibb.co/zW7jqDnn/Logo-Aviate.jpg?height=200&width=400",
+      github: "https://github.com/LDMark1",
+      //demo: "#",
+    },
+    {
+      title: "A* Algorithm Path Finder",
+      description:
+        "Implemented the A* algorithm to estimate the shortest path between two points, with both web and GUI interfaces using Prologue.",
+      technologies: ["Prologue", "Algorithms", "Path Finding", "GUI"],
+      image: "https://i.ibb.co/wh2h9jgL/Logo-Path-IQ.jpg?height=200&width=400",
+      github: "https://github.com/LDMark1/Shortest-Path-Using-Prologue-Implementation-of-A-Star-Algorithm-",
+      //demo: "#",
+    },
+    {
+      title: "Poetry Website",
+      description:
+        "Developed a poetry website using Angular and deployed it on Heroku, showcasing various poems with a beautiful user interface.",
+      technologies: ["Angular", "Heroku", "Frontend", "UI/UX"],
+      image: "https://i.ibb.co/pjvprb0x/Poetry.jpg?height=200&width=400",
+      github: "https://github.com/LDMark1/Poetry-Web-App-using-Angular",
+      //demo: "#",
+    },
+    {
+      title: "Tic Tac Toe",
+      description:
+        "This game is designed for two players to compete against each other or a single user can play against a computer as well, taking turns placing either X or O on a 3x3 grid until one player (or a computer) has three in a row or all spaces are filled.",
+      technologies: ["JavaScript", "CSS", "HTML", "UI/UX"],
+      image: "https://tic-tac-toe-snowy-one-23.vercel.app/static/media/logo.966b8ad4ea0da15e96c1.png?height=150&width=150",
+      github: "https://github.com/LDMark1/tic-tac-toe",
+      //demo: "#",
+    },
+  ]
+
+  return (
+    <section id="projects" className="py-20 bg-slate-50 dark:bg-slate-900">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16 reveal-bottom">
+          <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-2">Projects</h2>
+          <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+          <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+            Here are some of the projects I've worked on throughout my career and education. Each project demonstrates
+            different skills and technologies.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <Card
+              key={index}
+              className="bg-white dark:bg-slate-800 border-none shadow-lg hover:shadow-xl transition-all hover:-translate-y-2 duration-300 reveal-bottom"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
+              <div className="overflow-hidden h-48 relative">
+                <img
+                  src={project.image || "/placeholder.svg"}
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                />
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">{project.title}</h3>
+                <p className="text-slate-600 dark:text-slate-400 text-sm mb-4">{project.description}</p>
+                <div className="flex flex-wrap gap-2">
+                  {project.technologies.map((tech, i) => (
+                    <Badge
+                      key={i}
+                      variant="secondary"
+                      className="bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300"
+                    >
+                      {tech}
+                    </Badge>
+                  ))}
+                </div>
+              </CardContent>
+              <CardFooter className="p-6 pt-0 flex justify-between">
+                <Button variant="outline" size="sm" asChild>
+                  <a href={project.github} target="_blank" rel="noopener noreferrer">
+                    <Github className="mr-2 h-4 w-4" />
+                    Code
+                  </a>
+                </Button>
+              </CardFooter>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
