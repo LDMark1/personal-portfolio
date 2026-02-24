@@ -13,7 +13,7 @@ export default function Footer() {
               Abdul<span className="text-blue-500">Rafae</span>
             </Link>
             <p className="mt-2 text-slate-400 max-w-md">
-              Software Engineer specializing in building scalable and efficient systems.
+              Frontend Software Engineer specialising in React, Next.js, and modern web experiences.
             </p>
           </div>
 

@@ -7,7 +7,7 @@ import Link from "next/link"
 
 export default function Hero() {
   const [typedText, setTypedText] = useState("")
-  const fullText = "Building scalable and efficient systems."
+  const fullText = "Crafting high-performance web experiences."
 
   useEffect(() => {
     let index = 0
@@ -39,7 +39,7 @@ export default function Hero() {
               Abdul Rafae
             </h1>
             <h2 className="text-xl md:text-2xl font-medium text-slate-700 dark:text-slate-300 mb-6">
-              Software Engineer
+              Frontend Software Engineer
             </h2>
             <div className="h-8 mb-8">
               <p className="text-lg md:text-xl text-blue-600 dark:text-blue-400 font-medium">
@@ -49,9 +49,9 @@ export default function Hero() {
             </div>
 
             <p className="text-slate-600 dark:text-slate-400 max-w-2xl mb-8 leading-relaxed">
-              Passionate Software Engineer with expertise in Python, JavaScript, Flask, and ReactJS. I specialize in
-              building scalable and efficient systems that deliver exceptional user experiences. Let's create something
-              amazing together.
+              Frontend Software Engineer specialising in React and Next.js, with experience building high-performance,
+              user-facing web applications and modern e-commerce interfaces. Focused on delivering responsive, accessible,
+              and conversion-driven digital experiences.
             </p>
 
             <div className="flex flex-wrap justify-center md:justify-start gap-4 mb-12">

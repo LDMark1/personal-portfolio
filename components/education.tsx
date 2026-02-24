@@ -4,24 +4,22 @@ import { GraduationCap, Calendar, MapPin } from "lucide-react"
 export default function Education() {
   const education = [
     {
-      degree: "Masters in Advanced Computer Science",
+      degree: "MSc Advanced Computer Science",
       institution: "University of Chester",
       location: "Chester, UK",
-      period: "January 2025 - Present",
+      period: "January 2025 - January 2026",
       courses: [
-        "Research Methods",
-        "Concepts of UX",
-        "Bio-Inspired Computing",
-        "Digital Forensics and Incident Response",
-        "Penetration Testing and Active Defense",
+        "Dissertation: Beyond Hashing: Exploring Secure Alternatives to Password Storage",
       ],
     },
     {
-      degree: "Bachelors in Information Technology",
+      degree: "BSc Information Technology",
       institution: "Air University",
       location: "Islamabad, PK",
-      period: "Graduated June 2023",
-      courses: [],
+      period: "September 2019 - June 2023",
+      courses: [
+        "Final Year Project: National child vaccination reporting data warehouse",
+      ],
     },
   ]
 

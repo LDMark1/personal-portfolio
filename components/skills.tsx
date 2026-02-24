@@ -1,47 +1,32 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Server, Database, Code, GitBranch, Cloud, Users, Clock, MessageSquare } from "lucide-react"
+import { Layers, Zap, Paintbrush, Plug, Code, Component } from "lucide-react"
 
 export default function Skills() {
   const skills = [
     {
-      category: "Software Architecture",
-      icon: <Server className="h-10 w-10 text-blue-600 dark:text-blue-400" />,
-      items: ["SOLID Principles", "Design Patterns", "RESTful API Design", "Microservices"],
+      category: "Frameworks & Libraries",
+      icon: <Layers className="h-10 w-10 text-blue-600 dark:text-blue-400" />,
+      items: ["React", "Next.js (SSR / SSG)", "Angular", "TypeScript", "JavaScript (ES6+)"],
     },
     {
-      category: "Technologies",
-      icon: <Cloud className="h-10 w-10 text-blue-600 dark:text-blue-400" />,
-      items: ["AWS", "Redis", "Docker", "Google Ad Manager (GAM)"],
+      category: "React & Architecture",
+      icon: <Component className="h-10 w-10 text-blue-600 dark:text-blue-400" />,
+      items: ["Component-based Architecture", "Custom Hooks", "Context API", "Client-side Routing", "State Management"],
     },
     {
-      category: "Version Control",
-      icon: <GitBranch className="h-10 w-10 text-blue-600 dark:text-blue-400" />,
-      items: ["Git", "GitHub", "Collaborative Development", "CI/CD"],
+      category: "Performance & Optimisation",
+      icon: <Zap className="h-10 w-10 text-blue-600 dark:text-blue-400" />,
+      items: ["Code-splitting", "Lazy Loading", "SSR / SSG (Next.js)", "Performance Tuning", "SEO Optimisation"],
     },
     {
-      category: "Database",
-      icon: <Database className="h-10 w-10 text-blue-600 dark:text-blue-400" />,
-      items: ["SQL", "NoSQL", "Database Design", "Query Optimization"],
+      category: "Styling & UI",
+      icon: <Paintbrush className="h-10 w-10 text-blue-600 dark:text-blue-400" />,
+      items: ["TailwindCSS", "MUI", "CSS3", "HTML5", "Shopify Liquid", "Responsive (Mobile-first) Design"],
     },
     {
-      category: "Development Tools",
-      icon: <Code className="h-10 w-10 text-blue-600 dark:text-blue-400" />,
-      items: ["Postman", "Notion", "Jira", "Confluence"],
-    },
-    {
-      category: "Soft Skills",
-      icon: <Users className="h-10 w-10 text-blue-600 dark:text-blue-400" />,
-      items: ["Problem-solving", "Effective Communication", "Client Relationship", "Team Collaboration"],
-    },
-    {
-      category: "Time Management",
-      icon: <Clock className="h-10 w-10 text-blue-600 dark:text-blue-400" />,
-      items: ["Project Planning", "Task Prioritization", "Deadline Management", "Agile Methodologies"],
-    },
-    {
-      category: "Communication",
-      icon: <MessageSquare className="h-10 w-10 text-blue-600 dark:text-blue-400" />,
-      items: ["Technical Documentation", "Client Presentations", "Team Meetings", "Knowledge Sharing"],
+      category: "Integration & Tooling",
+      icon: <Plug className="h-10 w-10 text-blue-600 dark:text-blue-400" />,
+      items: ["REST API Integration (Axios / Fetch)", "Form Validation", "Role-based UI Rendering", "Git", "Vercel", "CI/CD"],
     },
   ]
 
@@ -56,7 +41,7 @@ export default function Skills() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {skills.map((skill, index) => (
             <Card
               key={index}

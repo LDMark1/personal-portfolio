@@ -6,58 +6,28 @@ import { ExternalLink, Github } from "lucide-react"
 export default function Projects() {
   const projects = [
     {
-      title: "Child Vaccination Data Warehouse",
+      title: "Parcel Logistics Management Platform",
       description:
-        "Developed a comprehensive data warehouse for maintaining and reporting child vaccination data for Pakistan. This was my final year project.",
-      technologies: ["Python", "SQL", "ETL", "Data Visualization", "Reporting"],
-      image: "https://i.ibb.co/JWJ13G95/vaccine-image.jpg?height=200&width=400",
+        "Built a full-featured parcel tracking application using Next.js with dynamic routing, API-driven tracking updates, status visualisation components, and reusable UI modules for shipment history and notifications.",
+      technologies: ["Next.js", "TypeScript", "TailwindCSS", "SSR", "ISR"],
+      image: "/placeholder.svg?height=200&width=400",
       github: "https://github.com/LDMark1/",
-      //demo: "#",
     },
     {
-      title: "Tele-psychiatry App",
+      title: "Flip & Fresh",
       description:
-        "Built a Tele-psychiatry app using React and Firebase, enabling real-time one-to-one chat between patients and psychiatrists, improving accessibility to mental health services.",
-      technologies: ["React", "Firebase", "Real-time Chat", "Authentication"],
+        "Developed a modern e-commerce frontend using Next.js with responsive product listing and detail pages, dynamic routing, clean component hierarchy, and a focus on performance and mobile responsiveness.",
+      technologies: ["Next.js", "TypeScript", "TailwindCSS", "E-commerce"],
+      image: "/placeholder.svg?height=200&width=400",
+      github: "https://github.com/LDMark1/",
+    },
+    {
+      title: "Tele-Psychiatry App",
+      description:
+        "Built a real-time 1-to-1 consultation interface enabling direct conversations between clients and psychiatrists, with role-based dashboards, secure appointment booking, and responsive layouts.",
+      technologies: ["React.js", "TypeScript", "MUI", "Real-time Chat"],
       image: "https://i.ibb.co/zThX41Hx/Logo-Mind-Connect.jpg?height=200&width=400",
       github: "https://github.com/LDMark1/Tele-psychiatry-app",
-      //demo: "#",
-    },
-    {
-      title: "Flight Management System",
-      description:
-        "Designed a comprehensive Flight Management System using HTML, CSS, Django and MS SQL Server for booking and managing flight operations.",
-      technologies: ["HTML", "CSS", "Django", "MS SQL Server"],
-      image: "https://i.ibb.co/zW7jqDnn/Logo-Aviate.jpg?height=200&width=400",
-      github: "https://github.com/LDMark1",
-      //demo: "#",
-    },
-    {
-      title: "A* Algorithm Path Finder",
-      description:
-        "Implemented the A* algorithm to estimate the shortest path between two points, with both web and GUI interfaces using Prologue.",
-      technologies: ["Prologue", "Algorithms", "Path Finding", "GUI"],
-      image: "https://i.ibb.co/wh2h9jgL/Logo-Path-IQ.jpg?height=200&width=400",
-      github: "https://github.com/LDMark1/Shortest-Path-Using-Prologue-Implementation-of-A-Star-Algorithm-",
-      //demo: "#",
-    },
-    {
-      title: "Poetry Website",
-      description:
-        "Developed a poetry website using Angular and deployed it on Heroku, showcasing various poems with a beautiful user interface.",
-      technologies: ["Angular", "Heroku", "Frontend", "UI/UX"],
-      image: "https://i.ibb.co/pjvprb0x/Poetry.jpg?height=200&width=400",
-      github: "https://github.com/LDMark1/Poetry-Web-App-using-Angular",
-      //demo: "#",
-    },
-    {
-      title: "Tic Tac Toe",
-      description:
-        "This game is designed for two players to compete against each other or a single user can play against a computer as well, taking turns placing either X or O on a 3x3 grid until one player (or a computer) has three in a row or all spaces are filled.",
-      technologies: ["JavaScript", "CSS", "HTML", "UI/UX"],
-      image: "https://tic-tac-toe-snowy-one-23.vercel.app/static/media/logo.966b8ad4ea0da15e96c1.png?height=150&width=150",
-      github: "https://github.com/LDMark1/tic-tac-toe",
-      //demo: "#",
     },
   ]
 

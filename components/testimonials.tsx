@@ -9,7 +9,7 @@ const testimonials = [
   {
     id: 1,
     content:
-      "Abdul is an exceptional software engineer who consistently delivers high-quality solutions. His expertise in optimizing data retrieval systems significantly improved our application performance.",
+      "Abdul consistently delivered high-quality React dashboards that handled complex data workflows. His focus on performance optimisation resulted in sub-2s load times that our users love.",
     author: "Sarah Johnson",
     position: "CTO, MonetizeMore",
     avatar: "/placeholder.svg?height=80&width=80",
@@ -17,17 +17,17 @@ const testimonials = [
   {
     id: 2,
     content:
-      "Working with Abdul was a pleasure. His deep knowledge of Python and ReactJS helped us build a robust and user-friendly dashboard that our clients love. He's proactive and always delivers on time.",
+      "Working with Abdul on our Shopify storefronts was a pleasure. His deep knowledge of frontend development and responsive design helped us achieve ~200% traffic growth through optimised user experiences.",
     author: "Michael Chen",
-    position: "Product Manager, ReconVault",
+    position: "Director, WebCartCentral",
     avatar: "/placeholder.svg?height=80&width=80",
   },
   {
     id: 3,
     content:
-      "Abdul's attention to detail and problem-solving skills are impressive. He quickly identified and fixed performance bottlenecks in our system, resulting in a 70% improvement in response time.",
+      "Abdul's attention to detail and problem-solving skills are impressive. He built a responsive, SEO-optimised application that achieved ~1s load time, significantly improving our monitoring capabilities.",
     author: "Emily Rodriguez",
-    position: "Lead Developer, TechSolutions",
+    position: "Lead Engineer, ReconVault",
     avatar: "/placeholder.svg?height=80&width=80",
   },
 ]

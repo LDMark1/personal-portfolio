@@ -3,19 +3,19 @@ import { Progress } from "@/components/ui/progress"
 
 export default function Languages() {
   const languages = [
-    { name: "Python", proficiency: 95 },
-    { name: "JavaScript", proficiency: 90 },
-    { name: "SQL", proficiency: 85 },
-    { name: "HTML/CSS", proficiency: 80 },
-    { name: "TypeScript", proficiency: 75 },
+    { name: "TypeScript", proficiency: 95 },
+    { name: "JavaScript (ES6+)", proficiency: 95 },
+    { name: "HTML5", proficiency: 90 },
+    { name: "CSS3", proficiency: 90 },
+    { name: "Shopify Liquid", proficiency: 75 },
   ]
 
   const frameworks = [
-    { name: "Flask", proficiency: 90 },
-    { name: "Django", proficiency: 85 },
-    { name: "ReactJS", proficiency: 85 },
-    { name: "Next.js", proficiency: 80 },
-    { name: "Express.js", proficiency: 75 },
+    { name: "React", proficiency: 95 },
+    { name: "Next.js (SSR / SSG)", proficiency: 90 },
+    { name: "TailwindCSS", proficiency: 90 },
+    { name: "Angular", proficiency: 75 },
+    { name: "MUI", proficiency: 80 },
   ]
 
   return (
